@@ -64,3 +64,19 @@
 * транспортный: `TCP(6)`, `UDP(17)`
 * прикладной: `BGP (179/tcp)`, `WHOIS (43/tcp)`, `FTP (21/tcp,20/tcp)`, `DNS (53/udp,53/tcp)`, `NTP/SNTP (123/udp)`, `TELNET (23/tcp)`, `SMTP (25/tcp)`, `POP3 (110/tcp)`, `IMAP (143/tcp)`, `HTTP (80/tcp)`
 * SSL: `SMTP (465)`, `POP3 (995)`, `HTTPS (443)`
+
+###Протокол OSPF
+##Виды зон:
+|Тип зоны|Особенности|
+|--------|-----------|
+|Backbone|<ul><li>item1</li><li>item2</li></ul>|
+|Normal  |- Разрешены все LSA, кроме NSSA External|
+|Stub    |- Блокируются External LSA
+- ABR конвертирует External LSA в Summary LSA 0.0.0.0/0|
+|Totally Stubby|
+- Модификация Cisco
+- Блокирует External LSA и  Summary LSA
+- ABR конвертирует External LSA и Summary LSA в единственный Summary LSA 0.0.0.0/0|
+
+
+
