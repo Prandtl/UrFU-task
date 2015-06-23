@@ -70,7 +70,7 @@
 |Тип зоны|Особенности|
 |--------|-----------|
 |Backbone|<ul><li>ID=0.0.0.0</li><li>Не может быть тупиковой</li><li>Все остальные обязаны соединяться с backbone</li></ul>|
-|Normal  |<ul><li>Разрешены все LSA, кроме NSSA External</li></ul>>|
+|Normal  |<ul><li>Разрешены все LSA, кроме NSSA External</li></ul>|
 |Stub    |<ul><li>Блокируются External LSA</li><li>ABR конвертирует External LSA в Summary LSA 0.0.0.0/0</li><ul>|
 |Totally Stubby|<ul><li>Модификация Cisco</li><li>Блокирует External LSA и  Summary LSA</li><li>ABR конвертирует External LSA и Summary LSA в единственный Summary LSA 0.0.0.0/0</li><ul>|
 |NSSA|<ul><li>Блокирует External LSA</li><li>ABR конвертирует External LSA в Summary LSA 0.0.0.0/0</li><li>Разрешены ASBR</li><li>Для передачи внешних маршрутов используется NSSA External LSA</li><li>На ABR NSSA External LSA конвертируется в External LSA и передается в соседние области</li></ul>|
